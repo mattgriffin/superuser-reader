@@ -1,1 +1,33 @@
 /* Empty. Add your own CSS if you like */
+.card
+{
+  border-bottom: 4px solid #00adef;
+}
+
+.item h2
+{
+  font-size: 22px;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+.summary
+{
+  font: 1em "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.author
+{
+  font-size: 14px;
+}
+
+.card
+{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.item-content
+{
+  padding: 10px !important;
+}
