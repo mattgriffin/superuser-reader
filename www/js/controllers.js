@@ -54,6 +54,10 @@ angular.module('starter.controllers', [])
                 console.log("ERROR: " + data);
             });
     }
+
+    $scope.browse = function(v) {
+        window.open(v, "_blank", "location=yes,toolbar=yes,enableViewportScale=yes,closebuttoncaption=Close,transitionstyle=fliphorizontal");
+    }
 })
 
 .controller('ArticlesCtrl', function($scope) {
