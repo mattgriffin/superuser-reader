@@ -1,9 +1,10 @@
 <ion-view view-title="Superuser">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="article in articles" href="#/app/articles/{{article.id}}">
-        {{article.title}}
-      </ion-item>
-    </ion-list>
+  <ion-content ng-controller="FeedController" ng-init="init()">
+      <div class="list">
+          <div ng-repeat="entry in entries" class="item">
+              <b>{{entry.title}}</b><br>
+              <span ng-bind-html="entry.contentSnippet"></span>
+          </div>
+      </div>
   </ion-content>
 </ion-view>
