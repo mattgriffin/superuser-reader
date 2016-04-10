@@ -1,10 +1,16 @@
 <ion-view view-title="Superuser">
   <ion-content ng-controller="FeedController" ng-init="init()">
-      <div class="list">
-          <div ng-repeat="entry in entries" class="item">
-              <b>{{entry.title}}</b><br>
-              <span ng-bind-html="entry.contentSnippet"></span>
-          </div>
+    <div ng-repeat="entry in entries" class="item item-borderless" ng-click="browse(entry.link)">
+      <div class="card">
+        <div class="item item-divider item-text-wrap">
+          <h2>{{entry.title}}</h2>
+        </div>
+        <div class="item item-body item-text-wrap">
+          <span ng-bind-html="entry.contentSnippet"></span></br></br>
+          <span>{{entry.publishedDate}}</br>
+            By {{entry.author}}</span>
+        </div>
       </div>
+    </div>
   </ion-content>
 </ion-view>
