@@ -1,4 +1,18 @@
 /* Empty. Add your own CSS if you like */
+h1.title {
+	background: url("../img/su.png");
+	text-indent: -9999px;
+	/*background-size: contain;*/
+	background-size: 15% auto;
+	background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-title {
+	background-color: #02233c !important;
+	color: #ffffff !important;
+}
+
 .content-page
 {
   margin: 0px !important;
