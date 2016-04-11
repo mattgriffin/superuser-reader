@@ -1,1 +1,65 @@
 /* Empty. Add your own CSS if you like */
+/*h1.title {
+	background: url("../img/su.png");
+	text-indent: -9999px;
+	background-size: 15% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-title {
+	background-color: #02233c !important;
+	color: #ffffff !important;
+}
+*/
+
+.content-page
+{
+  margin: 0px !important;
+  padding: 10px !important;
+}
+
+.content-page h1
+{
+  font-size: 26px;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+.content-page p
+{
+  font: 1em "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.card
+{
+  border-bottom: 4px solid #00adef;
+}
+
+.item h2
+{
+  font-size: 22px;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+.summary
+{
+  font: 1em "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.author
+{
+  font-size: 14px;
+}
+
+.card
+{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.item-content
+{
+  padding: 10px !important;
+}
