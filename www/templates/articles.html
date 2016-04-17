@@ -19,9 +19,11 @@
           <h2>{{entry.title}}</h2>
         </div>
         <div class="item item-body item-text-wrap">
-          <span ng-bind-html="entry.contentSnippet"></span></br></br>
-          <span class="author">{{entry.publishedDate}}</br>
-            {{entry.author}}</span>
+          <div class="content" ng-bind-html="entry.contentSnippet"></div></br></br>
+          <div class="metadata">
+            <div class="pubDate">{{entry.publishedDate | amDateFormat:'MMMM D, YYYY'}}</div>
+            <div class="author">{{entry.author}}</div>
+          </div>
         </div>
       </div>
     </div>

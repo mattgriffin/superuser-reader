@@ -22,7 +22,7 @@
 .content-page h1
 {
   font-size: 26px;
-  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .content-page p
@@ -42,16 +42,44 @@
   font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif
 }
 
-.summary
+/*.summary
 {
-  font: 1em "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+}*/
+
+.content
+{
+  font: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  /*background: #fff;
+  box-sizing: border-box;*/
 }
 
-.author
+/*.metadata {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #f7f6f3;
+  padding: 20px;
+  font-size: 14px;
+  background: #fff;
+  box-sizing: border-box;
+}*/
+
+.author, .pubDate
 {
+  /*box-sizing: border-box;*/
+  font: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
+
+/*.author
+{
+    float: right;
+    text-align: left;
+}*/
 
 .card
 {
