@@ -43,7 +43,7 @@ angular.module('starter.controllers', [])
 
 .controller("FeedController", function($http, $scope) {
     $scope.init = function() {
-        $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://superuser.openstack.org/articles/feed/", "num": 100 } })
+        $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://superuser.openstack.org/feed/", "num": 100 } })
             .success(function(data) {
                 $scope.rssTitle = data.responseData.feed.title;
                 $scope.rssUrl = data.responseData.feed.feedUrl;
