@@ -10,14 +10,14 @@ angular.module('starter.controllers', [])
   //});
 
   // Form data for the login modal
-  $scope.loginData = {};
+  //$scope.loginData = {};
 
   // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
+  //$ionicModal.fromTemplateUrl('templates/login.html', {
+  //  scope: $scope
+  //}).then(function(modal) {
+  //  $scope.modal = modal;
+  //});
 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
@@ -43,12 +43,12 @@ angular.module('starter.controllers', [])
 
 .controller("FeedController", function($http, $scope) {
     $scope.init = function() {
-        $http.get("http://ajax.googleapis.com/ajax/services/feed/load", { params: { "v": "1.0", "q": "http://superuser.openstack.org/feed/", "num": 100 } })
+        $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Fsuperuser.openstack.org%2Ffeed%2F'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys")
             .success(function(data) {
-                $scope.rssTitle = data.responseData.feed.title;
-                $scope.rssUrl = data.responseData.feed.feedUrl;
-                $scope.rssSiteUrl = data.responseData.feed.link;
-                $scope.entries = data.responseData.feed.entries;
+                $scope.rssTitle = data.query.results.rss.channel.title;
+                //$scope.rssUrl = data.query.results.rss.channel.feedUrl;
+                //$scope.rssSiteUrl = data.responseData.feed.link;
+                $scope.entries = data.query.results.rss.channel.item;
             })
             .error(function(data) {
                 console.log("ERROR: " + data);

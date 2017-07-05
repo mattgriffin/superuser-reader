@@ -42,15 +42,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angularMoment'])
     }
   })
 
-  .state('app.single', {
-  url: '/articles/:articleId',
-  views: {
-    'menuContent': {
-      templateUrl: 'templates/article.html',
-      controller: 'ArticleCtrl'
-    }
-  }
-  })
+  //.state('app.single', {
+  //url: '/articles/:articleId',
+  //views: {
+  //  'menuContent': {
+  //    templateUrl: 'templates/article.html',
+  //    controller: 'ArticleCtrl'
+  //  }
+  //}
+  //})
 
   .state('app.summit', {
     url: '/summit',

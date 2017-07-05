@@ -68,7 +68,7 @@
   box-sizing: border-box;
 }*/
 
-.author, .pubDate
+.author, .pubDate, .comments
 {
   /*box-sizing: border-box;*/
   font: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -19,10 +19,11 @@
           <h2>{{entry.title}}</h2>
         </div>
         <div class="item item-body item-text-wrap">
-          <div class="content" ng-bind-html="entry.contentSnippet"></div></br></br>
+          <div class="content" ng-bind-html="entry.description">{{entry.description}}</div></br>
           <div class="metadata">
-            <div class="pubDate">{{entry.publishedDate | amDateFormat:'MMMM D, YYYY'}}</div>
-            <div class="author">{{entry.author}}</div>
+            <div class="pubDate">{{entry.pubDate | amDateFormat:'MMMM D, YYYY'}}</div>
+            <div class="author">{{entry.creator}}</div>
+            <div class="comments">{{entry.comments[1]}} comments
           </div>
         </div>
       </div>
