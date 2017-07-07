@@ -8,7 +8,7 @@
     },
     "installed_plugins": {
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.mattgriffin.SuperuserReader"
+            "PACKAGE_NAME": "com.mattgriffin.superuserreader"
         }
     },
     "dependent_plugins": {}
